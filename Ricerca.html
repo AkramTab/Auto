@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricerca</title>
+  <link rel="stylesheet" href="Ricerca.css">
+</head>
+
+<body>
+  <center>
+    <img id="logo" src="Foto/logo.png" alt="Logo" onclick="redirectToHome()">
+    <div id="linea"></div>
+    <h1 class="grande">AutoHouse Concessionaria</h1>
+  </center>
+
+  <label for="Trasmissione"></label>
+  <select id="Trasmissione">
+    <option value="">Trasmissione</option>
+    <option value="Manuale">Manuale</option>
+    <option value="Automatica">Automatica</option>
+    <option value="Automatica o Manuale">Automatica o Manuale</option>
+  </select>
+
+  <label for="Cilindrata"></label>
+  <input type="text" id="Cilindrata" placeholder="Cilindrata(cc)">
+
+  <label for="Potenza"></label>
+  <input type="text" id="Potenza" placeholder="Potenza(CV)">
+
+  <label for="Cambio"></label>
+  <input type="number" id="Cambio" min="1" max="10" placeholder="Cambio">
+
+  <button id="btnRicerca">Ricerca</button>
+
+  <div class="car-container" id="car-container"></div>
+
+  <script src="Ricerca.js"></script>
+</body>
+
+</html>

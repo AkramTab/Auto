@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="Catalogo.css">
+</head>
+<script> 
+  function redirectToHome() {
+      window.location.href = 'index.html';
+
+  }
+</script>
+<body>
+  <div style="text-align: center; margin-top: 10px;">
+    <img id="logo" src="Foto/logo.png" alt="Logo" onclick="redirectToHome()">
+    <div id="linea"></div>
+    <h1 class="grande">AutoHouse Concessionaria</h1>
+    <button onclick="redirectToRicerca()">Ricerca Dettagliata</button>
+  </div>
+   
+  
+  <main class="container" id="gridContainer"></main>
+  <script> 
+      function redirectToRicerca() {
+          window.location.href = 'Ricerca.html';
+      }
+  </script>
+  <script src="Catalogo.js"></script>
+</body>
+
+</html>
